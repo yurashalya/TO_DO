@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&subset=cyrillic-ext');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+* {
+  outline: 0 !important;
+}

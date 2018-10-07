@@ -1,0 +1,172 @@
+.create__container {
+	display: none;
+    position: fixed;
+    z-index: 9;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main__forms {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    box-shadow: 0 0 8px 1px rgba(17, 20, 48, 0.14);
+    background-color: #f1f3f6;
+    top: 0;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    background-size: 100%;
+    animation-name: invoices;
+    animation-duration: 1s; 
+  }
+
+
+@keyframes invoices {
+  from {
+    top: -250px;
+    opacity: 0; 
+  }
+  to {
+    top: 0;
+    opacity: 1; 
+  } 
+}
+
+.modal_close {
+	position: absolute;
+	top: 33px;
+	right: 20px;
+	font-size: 22px;
+	color: black;
+	color: transparentize($light-black,0.6);
+	transition: color 200ms,
+				transform 500ms;
+}
+
+.modal_close:hover, .modal_close:focus {
+	color: $light-black;
+	transform: rotate(360deg);
+}
+
+.header {
+	width: 100%;
+	height: 10%;
+	padding-top: 30px;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-left: -15px;
+    border-left: 2px solid #ccc;
+    margin-left: 15px;
+    overflow: hidden;
+}
+
+.header h1:after {
+    content: "";
+    display: inline-block;
+    height: 9px;
+    vertical-align: bottom;
+    width: 75%;
+    margin-right: -80%;
+    margin-left: 15px;
+    border-top: 1px solid #ccc;
+}
+.forms {
+	margin-right: 15px;
+}
+form {
+	border: 1px solid #d2cccc;
+	width: 97%;
+	margin-left: 15px;
+	padding: 10px;
+	background: white;
+	border-radius: 10px;
+	margin-bottom: -60px;
+}
+
+.forms__value {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	margin-left: 37px;
+}
+
+.forms__values {
+	width: 49%;
+	display: flex;
+	flex-direction: column;
+}
+
+.forms__values label {
+	margin-bottom: 10px;
+}
+.forms__values input {
+	width: 95%;
+	height: 25px;
+}
+
+.forms__date, .forms__comment {
+	margin-top: 30px;
+}
+
+.forms__dates, .forms__comments {
+	display: flex;
+	flex-direction: column;
+	margin-left: 37px;
+}
+
+.forms__dates label {
+	margin-bottom: 10px;
+}
+
+.forms__dates input {
+	width: 533px;
+	height: 25px;
+	height: 25px;
+}
+
+.forms__comments textarea {
+	border-radius: 5px;
+	height: 50px;
+	width: 96%;
+}
+
+.forms__comments label {
+	margin-bottom: 10px;
+}
+
+.forms_btn {
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.forms_btn input {
+	margin-top: 10px;
+	margin-left: -28px;
+	padding: 7px 13px;
+  	background-color: blue;
+ 	color: #fff;
+ 	cursor: pointer;
+ 	border-radius: 7%;
+ 	border: none;
+  	margin-bottom: 5px;
+}
+
+#empSubmit {
+	visibility: visible;
+}
+
+#empCancel {
+	visibility: hidden;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Akvelon Test</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+   <div class="create__container" id="main__form">
+      <div class="main__forms">
+        <a href="#close" title="Закрыть" class="modal_close">&#10005</a>
+        <div class="header">  
+          <h1>Create Invoices</h1>
+        </div>
+        <div class="forms">
+          <form method="#" onsubmit="formData(); return false;">
+              <div class="forms__value">
+                <div class="forms__values">
+                  <label for="numb">Number</label>
+                  <input id="numb" type="number" name="number" placeholder="0000" required  pattern="[0-9]{4,20}">
+                </div>
+                <div class="forms__values">
+                  <label for="inDate">Invoice Date</label>
+                  <input id="inDate" type="date" name="date" placeholder="Select Date" required>
+                </div>
+              </div>
+              <div class="forms__date">
+                <div class="forms__dates">
+                  <label for="splDate">Supply Date</label>
+                  <input id="splDate" type="date" name="splDate" placeholder="Select Date" required>
+                </div>
+              </div>
+              <div class="forms__comment">
+                <div class="forms__comments">
+                  <label for="comment">Comment</label>
+                  <textarea id="comment" name="comment" rows="3" cols="100" required minlength="4"></textarea>
+                </div>
+              </div>   
+              <div class="forms_btn">
+                <input type="submit" id="empSubmit" style="visibility: visible"  value="Save"/>
+                <input type="submit" id="empCancel" style="visibility: hidden"  value="Cancel"/>
+              </div>
+         </form>
+        </div>
+    </div> 
+  </div>
+
+  <div class="invoices__container">
+      <div class="invoices__header">  
+        <h1 class="inv_header">Invoices</h1>
+      </div>
+      <div class="invoices__btn">
+        <p>Action</p>
+        <button id="click__invoices">Add new</button>
+      </div>
+      <div class="invoices__table">
+        <p>Invoices</p>
+        <table id="empTable">
+          <thead>
+            <tr>
+              <th>Create</th>
+              <th>No</th>
+              <th>Supply</th>
+              <th>Comment</th>
+              <th>Action</th>
+            </tr>
+        </thead>
+      </div> 
+      <tbody>
+                
+      </tbody>
+    </table>
+  </div>
+  <script src="js/script.js" ></script>
+</body>
+</html>
